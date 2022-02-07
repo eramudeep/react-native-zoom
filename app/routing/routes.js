@@ -7,6 +7,8 @@ import { View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { scale } from 'react-native-size-matters';
 import Home from '../screens/Home';
+import Search from '../screens/Search';
+
 import MaterialIcons from 'react-native-vector-icons/dist/MaterialIcons';
 import OnBoarding from '../screens/OnBoarding';
 import {appColors} from '../utils/appColors';
@@ -32,6 +34,16 @@ export const RoutesList = [
       tabBarIcon: (props) => <CustomIcon props={props} iconName="home" />,
     },
   },
+
+  {
+    name: 'Search',
+    component: Search,
+    options: {  
+      tabBarButton: ()=>null,
+    },
+  },
+
+  
 ];
 
 

@@ -34,14 +34,14 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         paddingHorizontal: scale(20),
         margin:scale(5),
-        height: scale(45),
+        height: scale(36),
         alignItems: "center",
-        backgroundColor: appColors.white,
-        borderRadius:scale(25),
+        backgroundColor: 'rgba(118, 118, 128, 0.12);',
+        borderRadius:scale(10),
         ...shadow
     },
     input: {
         flex: 1,
-        fontSize: scale(14)
+        fontSize: scale(17)
     }
 })
