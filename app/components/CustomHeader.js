@@ -6,7 +6,7 @@ import { appColors } from '../utils/appColors';
 //Search
 export default function CustomHeader({navigation}) {
   return (
-    <View style={{flexDirection:'row', justifyContent:'space-between', alignItems:'center'}} >
+    <View style={{flexDirection:'row', justifyContent:'space-between', alignItems:'center',marginTop:scale( 20)}} >
       <Pressable onPress={()=>navigation.navigate("Search") }>
           <MaterialIcons name="edit" size={scale(32)} color={appColors.gray} />
       </Pressable> 

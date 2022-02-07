@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {StyleSheet, Text, View, ScrollView, FlatList} from 'react-native';
+import {StyleSheet, Text, View, ScrollView, FlatList,Pressable} from 'react-native';
 import {useSelector, useDispatch} from 'react-redux';
 import {setError} from '../../redux/actions';
 import {} from 'react-native-gesture-handler';
@@ -17,6 +17,10 @@ import Badge from '../../components/Badge';
 import AvatarImage from '../../components/AvatarImage';
 import CustomHeader from '../../components/CustomHeader';
 export default function Home({navigation}) {
+
+ const onPress= ()=>{
+   navigation.navigate("Call")
+ } 
   const _renderActions = () => {
     return (
       <View
@@ -47,7 +51,7 @@ export default function Home({navigation}) {
 
   const ItemCard= ({item})=>{
     const {  name , time , img ,  agenda  }= item
-    return  <View style={{  justifyContent:'space-between', alignItems:'center', flexDirection:'row'}} >
+    return  <Pressable onPress={onPress} style={{  justifyContent:'space-between', alignItems:'center', flexDirection:'row'}} >
     <AvatarImage source={img} size={scale(60)} />
     <View style={{ flex:1, paddingHorizontal:scale(10)}} >
       <View style={{ flex:1, justifyContent:'space-between', alignItems:'center', flexDirection:'row'}}>
@@ -56,7 +60,7 @@ export default function Home({navigation}) {
       </View>
       <Label text={ agenda} style={{fontSize:scale(15), color:appColors.gray}}  />
     </View>
-</View>
+</Pressable>
   }
   const _renderAll = ()=>{
     return  <View style={{paddingVertical:scale(16)}} >

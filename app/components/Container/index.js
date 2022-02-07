@@ -3,17 +3,17 @@ import { ScrollView, StyleSheet, Text, View,SafeAreaView } from 'react-native'
 import { scale } from 'react-native-size-matters'
 import { appColors } from '../../utils/appColors'
 
-export default function Container({children,isScrollable}) {
+export default function Container({children,isScrollable, contentContainerStyle}) {
     return ( 
         <SafeAreaView style={styles.container}>
             {
-                isScrollable? <ScrollView>
-                    <View style={styles.innerView}>
+                isScrollable? <ScrollView showsVerticalScrollIndicator={false} >
+                    <View style={[styles.innerView,contentContainerStyle]}>
                         {children}
                     </View>
                 </ScrollView>
                 :
-                <View style={styles.innerView}>{children}</View>
+                <View style={[styles.innerView,contentContainerStyle]}>{children}</View>
             }
         </SafeAreaView>
       
@@ -22,6 +22,7 @@ export default function Container({children,isScrollable}) {
 const styles = StyleSheet.create({
     container:{
         flex:1,
+         
     },
     innerView:{
         flex:1,

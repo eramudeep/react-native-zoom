@@ -8,6 +8,10 @@ import * as Animatable from 'react-native-animatable';
 import { scale } from 'react-native-size-matters';
 import Home from '../screens/Home';
 import Search from '../screens/Search';
+import Contacts from '../screens/Contacts';
+import Call from '../screens/Call';
+import Schedule from '../screens/Schedule';
+
 
 import MaterialIcons from 'react-native-vector-icons/dist/MaterialIcons';
 import OnBoarding from '../screens/OnBoarding';
@@ -43,6 +47,32 @@ export const RoutesList = [
     },
   },
 
+  {
+    name: 'Contacts',
+    component: Contacts,
+    options: { 
+      tabBarLabel:()=> null, 
+      tabBarIcon: (props) => <CustomIcon props={props} iconName="people-outline" />,
+    },
+  }, 
+  {
+    name: 'Call',
+    component: Call,
+    options: {  
+      tabBarButton: ()=>null,
+    },
+  }, 
+  
+
+  {
+    name: 'Schedule',
+    component: Schedule,
+    options: { 
+      tabBarLabel:()=> null, 
+      tabBarIcon: (props) => <CustomIcon props={props} iconName="event" />,
+    },
+  }, 
+  
   
 ];
 

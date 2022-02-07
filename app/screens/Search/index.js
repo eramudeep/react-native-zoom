@@ -7,18 +7,11 @@ import { scale } from 'react-native-size-matters';
 import Label from '../../components/Label';
 import { users } from '../../utils/MockData';
 import { appColors } from '../../utils/appColors';
-
+import ContactCard from '../../components/ContactCard';
+import HeaderNew from '../../components/HeaderNew';
+ 
 export default function index() {
-
-   const ContactCard = ({item})=>{
-       const {  name, img  } =item
-       return <View style={{flexDirection:'row', alignItems:'center'}} >
-            <AvatarImage source={img} size={scale(40)} />
-            <View style={{marginLeft:scale( 20),    flex:1, paddingVertical:scale( 20), borderBottomWidth:scale(0.5), borderBottomColor:appColors.gray }} >
-                <Label text={name} style={{fontSize:scale(17)}} />
-            </View>
-       </View>
-   } 
+ 
   const _renderContacts = ()=>{
       return <View>
           <FlatList
@@ -31,6 +24,7 @@ export default function index() {
   }  
   return (
     <Container>
+      <HeaderNew  left="Back" center="Search" right="Add" />
         <CustomInput placeholder={"Search"} />
        {_renderContacts()}
     </Container>
