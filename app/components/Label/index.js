@@ -13,5 +13,6 @@ const styles = StyleSheet.create({
     label:{
         fontSize:scale(14),
         color:appColors.black,
+        fontFamily:"SFProDisplay-Regular"
     }
 })

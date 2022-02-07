@@ -12,8 +12,7 @@ export default function index({navigation}) {
       title: 'Amusoftech Pvt Ltd',
       text:
         '\nThere’s something for everyone. We have expert English teachers that will help you to grow. Our exercises are tailored to help users learn new words and vocabulary effectively.',
-      image:
-        'https://yt3.ggpht.com/Nx0AcLtf6qtpnimjf32-GhfT0pTdD-X_QQa-IrkujuI4OeTaz3wmsz7g_d_eyYnToxrUaFbE=s900-c-k-c0x00ffffff-no-rj',
+      image: require("../../assets/imgs/logo.png"),
       backgroundColor: '#febe29',
        
     },
@@ -22,8 +21,7 @@ export default function index({navigation}) {
       title: 'Achieve',
       text:
         '\nThis easy-to-use app lets you practice English in a simpler and effective way. You will learn something new everyday that will give you confidence and a positive attitude.',
-      image:
-        'https://yt3.ggpht.com/Nx0AcLtf6qtpnimjf32-GhfT0pTdD-X_QQa-IrkujuI4OeTaz3wmsz7g_d_eyYnToxrUaFbE=s900-c-k-c0x00ffffff-no-rj',
+        image: require("../../assets/imgs/logo.png"),
       backgroundColor: '#22bcb5',
        
     },
@@ -32,8 +30,7 @@ export default function index({navigation}) {
       title: 'Login',
       text:
         '\nWith the easy login process, get the best environment to enhance your English language writing skill. Prepare with confidence for your upcoming IELTS or other exams.',
-      image:
-        'https://yt3.ggpht.com/Nx0AcLtf6qtpnimjf32-GhfT0pTdD-X_QQa-IrkujuI4OeTaz3wmsz7g_d_eyYnToxrUaFbE=s900-c-k-c0x00ffffff-no-rj',
+        image: require("../../assets/imgs/logo.png"),
       backgroundColor: '#59b2ab',
        
     },
@@ -44,8 +41,9 @@ export default function index({navigation}) {
       <View style={styles.slide}>
         <Animatable.View animation={'bounceIn'} style={{alignItems: 'center', paddingVertical:scale(50)}}>
           <Image
-            style={{height: scale(150), width: scale(150), borderRadius:scale(50)}}
-            source={{uri: item.image}}
+            resizeMode='contain'
+            style={{height: scale(150), width: scale(300), borderRadius:scale(50)}}
+            source={ item.image }
           />
         </Animatable.View>
         <View style={{paddingHorizontal: scale(20)}}>
