@@ -1,7 +1,7 @@
-# [react-native-redux-starter](https://amusoftech.xyz/)
+# [Zoom App Re-Design](https://amusoftech.xyz/)
 
-A starter boilerplate for a mobile app using React Native and Redux.
-
+Zoom Video calling mobile app using React Native and Redux.
+Feel free to clone and star this repositry, and dont forget to visi our youtube channel
 ## Requirements
 
 - [Node](https://nodejs.org) `6.x` or newer
