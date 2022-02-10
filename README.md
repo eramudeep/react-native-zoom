@@ -2,6 +2,8 @@
 
 Zoom Video calling mobile app using React Native and Redux.
 Feel free to clone and star this repositry, and dont forget to visi our youtube channel
+
+#[Take a look on UI](https://youtu.be/8bAsUZDxzGQ)
 ## Requirements
 
 - [Node](https://nodejs.org) `6.x` or newer
