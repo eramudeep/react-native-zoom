@@ -3,7 +3,9 @@
 Zoom Video calling mobile app using React Native and Redux.
 Feel free to clone and star this repositry, and dont forget to visi our youtube channel
 
-#[Take a look on UI](https://youtu.be/8bAsUZDxzGQ)
+
+# [![Take a look on UI](https://yt-embed.herokuapp.com/embed?v=8bAsUZDxzGQ)](https://youtu.be/8bAsUZDxzGQ "Zoom Meetings")
+
 ## Requirements
 
 - [Node](https://nodejs.org) `6.x` or newer
